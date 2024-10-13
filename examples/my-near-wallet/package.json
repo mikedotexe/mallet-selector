@@ -1,0 +1,22 @@
+{
+  "name": "my-near-wallet-commonjs-example",
+  "version": "0.1.0",
+  "description": "Importing and basic usage of the MyNEARWallet workspace package",
+  "main": "src/index.js",
+  "scripts": {
+    "go": "yarn node src/index.js"
+  },
+  "author": "Mike Purvis",
+  "license": "MIT",
+  "dependencies": {
+    "@near-js/crypto": "*",
+    "@near-js/keystores-browser": "*",
+    "@near-js/transactions": "*",
+    "@near-js/utils": "*",
+    "@near-js/wallet-account": "*",
+    "@near-wallet-selector/core": "workspace:*",
+    "@near-wallet-selector/my-near-wallet": "workspace:*",
+    "@near-wallet-selector/wallet-utils": "workspace:*",
+    "near-api-js": "*"
+  }
+}

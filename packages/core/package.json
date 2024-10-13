@@ -1,0 +1,61 @@
+{
+  "name": "@meer-wallet-selector/core",
+  "version": "9.9.9",
+  "description": "This is the core package for NEAR Wallet Selector.",
+  "scripts": {
+    "compile:esm": "tsc -p tsconfig.esm.json",
+    "compile:cjs": "tsc -p tsconfig.cjs.json",
+    "clean": "yarn rimraf dist",
+    "publish": "yarn npm publish --access public --tolerate-republish"
+  },
+  "types": "./dist/esm/index.d.ts",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "type": "module",
+  "dependencies": {
+    "@meer-js/crypto": "*",
+    "@meer-js/providers": "*",
+    "borsh": "*",
+    "js-sha256": "*",
+    "meer-api-js": "*",
+    "rxjs": "*"
+  },
+  "devDependencies": {
+    "@meer-js/transactions": "*",
+    "@meer-js/types": "*",
+    "@types/jest": "*",
+    "@types/mocha": "*",
+    "@types/node": "*",
+    "jest": "*",
+    "jest-mock-extended": "*",
+    "rimraf": "*",
+    "typescript": "*"
+  },
+  "files": [
+    "./dist/esm",
+    "./dist/cjs"
+  ],
+  "exports": {
+    ".": {
+      "require": "./dist/cjs/index.js",
+      "import": "./dist/esm/index.js"
+    }
+  },
+  "keywords": [
+    "near",
+    "blockchain",
+    "wallets",
+    "dapps",
+    "near-protocol",
+    "near-blockchain",
+    "wallet selector core"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mikedotexe/mallet-selector.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mikedotexe/mallet-selector/issues"
+  },
+  "homepage": "https://github.com/mikedotexe/mallet-selector/tree/main/packages/core"
+}

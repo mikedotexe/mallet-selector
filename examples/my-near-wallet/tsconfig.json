@@ -1,0 +1,9 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "paths": {
+      "@meer-wallet-selector/*": ["../../packages/*/dist/cjs/*"]
+    }
+  },
+  "include": ["src/**/*"]
+}

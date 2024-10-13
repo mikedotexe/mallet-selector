@@ -1,0 +1,64 @@
+{
+  "name": "@meer-wallet-selector/my-near-wallet",
+  "version": "9.9.9",
+  "description": "My Near Wallet package for NEAR Wallet Selector.",
+  "scripts": {
+    "compile:esm": "yarn tsc -p tsconfig.esm.json",
+    "compile:cjs": "yarn tsc -p tsconfig.cjs.json",
+    "clean": "yarn rimraf dist",
+    "publish": "yarn npm publish --access public --tolerate-republish"
+  },
+  "types": "./dist/esm/my-near-wallet/src/index.d.ts",
+  "main": "./dist/cjs/my-near-wallet/src/index.js",
+  "module": "./dist/esm/my-near-wallet/src/index.js",
+  "type": "module",
+  "dependencies": {
+    "@meer-js/crypto": "*",
+    "@meer-js/keystores-browser": "*",
+    "@meer-js/signers": "*",
+    "@meer-js/transactions": "*",
+    "@meer-js/utils": "*",
+    "@meer-js/wallet-account": "*",
+    "@meer-wallet-selector/core": "workspace:*",
+    "@meer-wallet-selector/wallet-utils": "workspace:*"
+  },
+  "devDependencies": {
+    "@meer-js/types": "*",
+    "@types/jest": "*",
+    "@types/node": "*",
+    "jest": "*",
+    "jest-mock-extended": "*",
+    "meer-api-js": "*",
+    "rimraf": "6.0.1",
+    "typescript": "*"
+  },
+  "files": [
+    "./dist/esm",
+    "./dist/cjs"
+  ],
+  "exports": {
+    ".": {
+      "require": "./dist/cjs/my-near-wallet/src/index.js",
+      "import": "./dist/esm/my-near-wallet/src/index.js"
+    }
+  },
+  "keywords": [
+    "near",
+    "blockchain",
+    "wallets",
+    "dapps",
+    "near-protocol",
+    "near-blockchain",
+    "wallet selector",
+    "browser wallet",
+    "my near Wallet"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mikedotexe/mallet-selector.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mikedotexe/mallet-selector/issues"
+  },
+  "homepage": "https://github.com/mikedotexe/mallet-selector/tree/main/packages/my-near-wallet"
+}
