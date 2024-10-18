@@ -3870,6 +3870,30 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@meer-js/accounts@npm:6.6.10":
+  version: 6.6.10
+  resolution: "@meer-js/accounts@npm:6.6.10"
+  dependencies:
+    "@meer-js/crypto": "npm:6.6.10"
+    "@meer-js/keystores": "npm:6.6.10"
+    "@meer-js/providers": "npm:6.6.10"
+    "@meer-js/signers": "npm:6.6.10"
+    "@meer-js/transactions": "npm:6.6.10"
+    "@meer-js/types": "npm:6.6.10"
+    "@meer-js/utils": "npm:6.6.10"
+    "@noble/hashes": "npm:*"
+    borsh: "npm:1.0.0"
+    depd: "npm:2.0.0"
+    is-my-json-valid: "npm:^2.20.6"
+    isomorphic-unfetch: "npm:^3.1.0"
+    lru_map: "npm:0.4.1"
+    near-abi: "npm:0.1.1"
+  peerDependencies:
+    meer-api-js: 6.6.10
+  checksum: 10c0/6ffc89f79c996d4aae6f7787c9e03b19e41676a808e6531a206d194d32b941e26b304a702f113a9ea78d4ae7b9634a83e03a2397e72955dbdf32a808759d1d26
+  languageName: node
+  linkType: hard
+
 "@meer-js/accounts@npm:6.6.6":
   version: 6.6.6
   resolution: "@meer-js/accounts@npm:6.6.6"
@@ -3894,7 +3918,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@meer-js/crypto@npm:*, @meer-js/crypto@npm:6.6.6, @meer-js/crypto@npm:^6.6.6":
+"@meer-js/crypto@npm:*, @meer-js/crypto@npm:6.6.6":
   version: 6.6.6
   resolution: "@meer-js/crypto@npm:6.6.6"
   dependencies:
@@ -3909,13 +3933,48 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@meer-js/keystores-browser@npm:*, @meer-js/keystores-browser@npm:^6.6.6":
+"@meer-js/crypto@npm:6.6.10, @meer-js/crypto@npm:^6.6.10":
+  version: 6.6.10
+  resolution: "@meer-js/crypto@npm:6.6.10"
+  dependencies:
+    "@meer-js/utils": "npm:6.6.10"
+    "@noble/curves": "npm:1.2.0"
+    "@noble/hashes": "npm:*"
+    borsh: "npm:1.0.0"
+    cbor-js: "npm:^0.1.0"
+    randombytes: "npm:2.1.0"
+    secp256k1: "npm:5.0.0"
+  checksum: 10c0/d62b9de06cfb9e2183186bde7751e5b0412208b8ddac3ac575636032e0e00caf3fb8b9aa5b198a270a61ca7373475add42353a807694e059cd2f1d76c93ffbb9
+  languageName: node
+  linkType: hard
+
+"@meer-js/keystores-browser@npm:*":
   version: 6.6.6
   resolution: "@meer-js/keystores-browser@npm:6.6.6"
   dependencies:
     "@meer-js/crypto": "npm:6.6.6"
     "@meer-js/keystores": "npm:6.6.6"
   checksum: 10c0/eabb343a5cf2ae6b9d540aba628c3c49fb0ad6b5e037654696effd253fcda0a8dd45aea0268f6efc817574a7f51ec051df023c9432cdc5ab5f201a57c457c849
+  languageName: node
+  linkType: hard
+
+"@meer-js/keystores-browser@npm:^6.6.10":
+  version: 6.6.10
+  resolution: "@meer-js/keystores-browser@npm:6.6.10"
+  dependencies:
+    "@meer-js/crypto": "npm:6.6.10"
+    "@meer-js/keystores": "npm:6.6.10"
+  checksum: 10c0/79f02d8c70f787af81e121de95bccdbd92d4efc8b684d6492c6e2676597abd10ee47ff97897200ff05d3fa7867437f1ff29f22d21bba1e94f899f2e58edd61f1
+  languageName: node
+  linkType: hard
+
+"@meer-js/keystores@npm:6.6.10":
+  version: 6.6.10
+  resolution: "@meer-js/keystores@npm:6.6.10"
+  dependencies:
+    "@meer-js/crypto": "npm:6.6.10"
+    "@meer-js/utils": "npm:6.6.10"
+  checksum: 10c0/7099f12ee5495a9c52c8b641ff72bdf2f4d78a35b24ad57dab3458e0c01eb0de4524bfa428c64296a1c92a3ef2cd9bdb4e7a8e07f73341fa8d5ede4ba42f892c
   languageName: node
   linkType: hard
 
@@ -3929,7 +3988,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@meer-js/providers@npm:*, @meer-js/providers@npm:6.6.6, @meer-js/providers@npm:^6.6.6":
+"@meer-js/providers@npm:*, @meer-js/providers@npm:6.6.6":
   version: 6.6.6
   resolution: "@meer-js/providers@npm:6.6.6"
   dependencies:
@@ -3946,7 +4005,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@meer-js/signers@npm:*, @meer-js/signers@npm:6.6.6, @meer-js/signers@npm:^6.6.6":
+"@meer-js/providers@npm:6.6.10, @meer-js/providers@npm:^6.6.10":
+  version: 6.6.10
+  resolution: "@meer-js/providers@npm:6.6.10"
+  dependencies:
+    "@meer-js/transactions": "npm:6.6.10"
+    "@meer-js/utils": "npm:6.6.10"
+    borsh: "npm:1.0.0"
+    exponential-backoff: "npm:^3.1.1"
+    isomorphic-unfetch: "npm:^3.1.0"
+    node-fetch: "npm:2.6.7"
+  dependenciesMeta:
+    node-fetch:
+      optional: true
+  checksum: 10c0/dfb371c1e91e7fed951366ff8994f9744db5e2e35a59d3dda0398fb40b4dbd14a9cec8ffdee16fd966f0e769b91c52a995a816120e734e8ac25f411ecc2a9154
+  languageName: node
+  linkType: hard
+
+"@meer-js/signers@npm:*, @meer-js/signers@npm:6.6.6":
   version: 6.6.6
   resolution: "@meer-js/signers@npm:6.6.6"
   dependencies:
@@ -3957,7 +4033,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@meer-js/transactions@npm:*, @meer-js/transactions@npm:6.6.6, @meer-js/transactions@npm:^6.6.6":
+"@meer-js/signers@npm:6.6.10, @meer-js/signers@npm:^6.6.10":
+  version: 6.6.10
+  resolution: "@meer-js/signers@npm:6.6.10"
+  dependencies:
+    "@meer-js/crypto": "npm:6.6.10"
+    "@meer-js/keystores": "npm:6.6.10"
+    "@noble/hashes": "npm:*"
+  checksum: 10c0/8daa0a615bf22a4f39c154b2452bf4cbcb58af6cde9c680b7f86eb3c41f52de6323bb4201baee3fe9996d29be00beb08bcbacfefea5a08db2f8be8066e44307b
+  languageName: node
+  linkType: hard
+
+"@meer-js/transactions@npm:*, @meer-js/transactions@npm:6.6.6":
   version: 6.6.6
   resolution: "@meer-js/transactions@npm:6.6.6"
   dependencies:
@@ -3970,7 +4057,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@meer-js/types@npm:*, @meer-js/types@npm:6.6.6, @meer-js/types@npm:^6.6.6":
+"@meer-js/transactions@npm:6.6.10, @meer-js/transactions@npm:^6.6.10":
+  version: 6.6.10
+  resolution: "@meer-js/transactions@npm:6.6.10"
+  dependencies:
+    "@meer-js/crypto": "npm:6.6.10"
+    "@meer-js/signers": "npm:6.6.10"
+    "@meer-js/utils": "npm:6.6.10"
+    "@noble/hashes": "npm:^1.5.0"
+    borsh: "npm:*"
+  checksum: 10c0/aa18c56b3f622ce07da0586c8fe36f9f852ba4ef0b889ecff5f577f1e09b9a3fb27b5a32e89dbfa4ffa2b4b76b702ae8c55544e288d2ca60c4789ac37e05ad6f
+  languageName: node
+  linkType: hard
+
+"@meer-js/types@npm:*, @meer-js/types@npm:6.6.6":
   version: 6.6.6
   resolution: "@meer-js/types@npm:6.6.6"
   dependencies:
@@ -3979,7 +4079,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@meer-js/utils@npm:*, @meer-js/utils@npm:6.6.6, @meer-js/utils@npm:^6.6.6":
+"@meer-js/types@npm:6.6.10, @meer-js/types@npm:^6.6.10":
+  version: 6.6.10
+  resolution: "@meer-js/types@npm:6.6.10"
+  dependencies:
+    "@meer-js/crypto": "npm:6.6.10"
+  checksum: 10c0/213e3953399d5a61c8095963e0d6bf1f2fd86cc38fe81c6ca0a53bdf0c357e48e5451b160550197026cce775b33b477af890e51f4d2ef6a640417e19cdd6ffda
+  languageName: node
+  linkType: hard
+
+"@meer-js/utils@npm:*, @meer-js/utils@npm:6.6.6":
   version: 6.6.6
   resolution: "@meer-js/utils@npm:6.6.6"
   dependencies:
@@ -3990,7 +4099,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@meer-js/wallet-account@npm:*, @meer-js/wallet-account@npm:^6.6.6":
+"@meer-js/utils@npm:6.6.10, @meer-js/utils@npm:^6.6.10":
+  version: 6.6.10
+  resolution: "@meer-js/utils@npm:6.6.10"
+  dependencies:
+    bs58: "npm:4.0.0"
+    depd: "npm:2.0.0"
+    mustache: "npm:4.0.0"
+  checksum: 10c0/0b85681039cdcf3e078268080b4337b40b5c78eececaf5ddb4af3f790f6a773ed03606bdf6eaa7d3fce3ec3b6bc5523f86b2e33d046a82fdea666be42f5c0e1e
+  languageName: node
+  linkType: hard
+
+"@meer-js/wallet-account@npm:*":
   version: 6.6.6
   resolution: "@meer-js/wallet-account@npm:6.6.6"
   dependencies:
@@ -4003,6 +4123,22 @@ __metadata:
     "@meer-js/utils": "npm:6.6.6"
     borsh: "npm:*"
   checksum: 10c0/4a8ce9abf16890af8f72d451683c4393a30ed660525590aba109a5e00022d06d0efc29225502d03df202dffbb5cfe66254293812f31d52939a646352fdc79a88
+  languageName: node
+  linkType: hard
+
+"@meer-js/wallet-account@npm:^6.6.10":
+  version: 6.6.10
+  resolution: "@meer-js/wallet-account@npm:6.6.10"
+  dependencies:
+    "@meer-js/accounts": "npm:6.6.10"
+    "@meer-js/crypto": "npm:6.6.10"
+    "@meer-js/keystores": "npm:6.6.10"
+    "@meer-js/providers": "npm:6.6.10"
+    "@meer-js/signers": "npm:6.6.10"
+    "@meer-js/transactions": "npm:6.6.10"
+    "@meer-js/utils": "npm:6.6.10"
+    borsh: "npm:*"
+  checksum: 10c0/54bc0289f77d2088cd81b37efbf8b10652af24ac0954305693d98a7fe909189e6de7d0b136a568ad7b588f943d921e9885361d81aaab72c78e5da0c9507f644b
   languageName: node
   linkType: hard
 
@@ -21541,7 +21677,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"meer-api-js@npm:*, meer-api-js@npm:^6.6.6":
+"meer-api-js@npm:*":
   version: 6.6.6
   resolution: "meer-api-js@npm:6.6.6"
   dependencies:
@@ -21564,6 +21700,32 @@ __metadata:
     "@meer-js/utils": 6.6.6
     "@meer-js/wallet-account": 6.6.6
   checksum: 10c0/97b1157f4ad6f5c149bc6628e7ec3c00ae0062bc96d328164ada0a83ef3c5e398a49cd9ab85ec25088a978b1461ea9278a291c4ab51fee8d7461e1d45b931e28
+  languageName: node
+  linkType: hard
+
+"meer-api-js@npm:^6.6.10":
+  version: 6.6.10
+  resolution: "meer-api-js@npm:6.6.10"
+  dependencies:
+    "@noble/curves": "npm:1.2.0"
+    borsh: "npm:1.0.0"
+    depd: "npm:2.0.0"
+    http-errors: "npm:1.7.2"
+    near-abi: "npm:0.1.1"
+    node-fetch: "npm:2.6.7"
+  peerDependencies:
+    "@meer-js/accounts": 6.6.10
+    "@meer-js/crypto": 6.6.10
+    "@meer-js/keystores": 6.6.10
+    "@meer-js/keystores-browser": 6.6.10
+    "@meer-js/keystores-node": 6.6.10
+    "@meer-js/providers": 6.6.10
+    "@meer-js/signers": 6.6.10
+    "@meer-js/transactions": 6.6.10
+    "@meer-js/types": 6.6.10
+    "@meer-js/utils": 6.6.10
+    "@meer-js/wallet-account": 6.6.10
+  checksum: 10c0/302357cfd0228ac81252da5e63fe069a89cdde75c6d4b9574bf4ee8d79917a0f779f433c1c244df09e33437369ebba4baa767c45b685a55ed483ab46a5c73060
   languageName: node
   linkType: hard
 
@@ -21594,14 +21756,14 @@ __metadata:
     "@jscutlery/semver": "npm:5.3.1"
     "@ledgerhq/hw-transport": "npm:6.30.3"
     "@ledgerhq/hw-transport-webhid": "npm:6.29.2"
-    "@meer-js/crypto": "npm:^6.6.6"
-    "@meer-js/keystores-browser": "npm:^6.6.6"
-    "@meer-js/providers": "npm:^6.6.6"
-    "@meer-js/signers": "npm:^6.6.6"
-    "@meer-js/transactions": "npm:^6.6.6"
-    "@meer-js/types": "npm:^6.6.6"
-    "@meer-js/utils": "npm:^6.6.6"
-    "@meer-js/wallet-account": "npm:^6.6.6"
+    "@meer-js/crypto": "npm:^6.6.10"
+    "@meer-js/keystores-browser": "npm:^6.6.10"
+    "@meer-js/providers": "npm:^6.6.10"
+    "@meer-js/signers": "npm:^6.6.10"
+    "@meer-js/transactions": "npm:^6.6.10"
+    "@meer-js/types": "npm:^6.6.10"
+    "@meer-js/utils": "npm:^6.6.10"
+    "@meer-js/wallet-account": "npm:^6.6.10"
     "@metamask/detect-provider": "npm:2.0.0"
     "@mintbase-js/wallet": "npm:0.6.1"
     "@near-snap/sdk": "npm:0.6.0"
@@ -21672,7 +21834,7 @@ __metadata:
     js-sha256: "npm:^0.11.0"
     jsdoc: "npm:4.0.2"
     jspm: "npm:3.1.0"
-    meer-api-js: "npm:^6.6.6"
+    meer-api-js: "npm:^6.6.10"
     near-seed-phrase: "npm:0.2.0"
     next: "npm:13.3.0"
     ngx-deploy-npm: "npm:7.1.0"
