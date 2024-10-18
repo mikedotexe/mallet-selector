@@ -1,6 +1,6 @@
 {
   "name": "meer-wallet-selector",
-  "version": "9.9.10",
+  "version": "9.9.11",
   "description": "NEAR Wallet Selector makes it easy for users to interact with your dApp by providing an abstraction over various wallets within the NEAR ecosystem",
   "scripts": {
     "build-all:esm": "yarn workspaces foreach --all -t run compile:esm",

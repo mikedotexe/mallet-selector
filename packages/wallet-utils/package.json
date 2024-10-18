@@ -1,6 +1,6 @@
 {
   "name": "@meer-wallet-selector/wallet-utils",
-  "version": "9.9.10",
+  "version": "9.9.11",
   "description": "Wallet utils package for NEAR Wallet Selector.",
   "scripts": {
     "compile:esm": "tsc -p tsconfig.esm.json",

@@ -1,6 +1,6 @@
 {
   "name": "@meer-wallet-selector/here-wallet",
-  "version": "9.9.10",
+  "version": "9.9.11",
   "description": "Here wallet package for NEAR Wallet Selector.",
   "scripts": {
     "compile:esm": "tsc -p tsconfig.esm.json",
