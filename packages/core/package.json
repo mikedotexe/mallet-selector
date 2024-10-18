@@ -1,6 +1,6 @@
 {
   "name": "@meer-wallet-selector/core",
-  "version": "9.9.11",
+  "version": "9.9.12",
   "description": "This is the core package for NEAR Wallet Selector.",
   "scripts": {
     "compile:esm": "tsc -p tsconfig.esm.json",
@@ -32,8 +32,7 @@
     "typescript": "*"
   },
   "files": [
-    "./dist/esm",
-    "./dist/cjs"
+    "dist"
   ],
   "exports": {
     ".": {
