@@ -1,6 +1,6 @@
 {
   "name": "@meer-wallet-selector/bitte-wallet",
-  "version": "9.9.12",
+  "version": "9.9.13",
   "description": "Bitte wallet package for NEAR Wallet Selector.",
   "scripts": {
     "compile:esm": "tsc -p tsconfig.esm.json",

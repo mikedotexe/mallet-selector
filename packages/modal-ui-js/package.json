@@ -1,6 +1,6 @@
 {
   "name": "@meer-wallet-selector/modal-ui-js",
-  "version": "9.9.12",
+  "version": "9.9.13",
   "description": "Modal UI package for NEAR wallet Selector",
   "scripts": {
     "compile:esm": "tsc -p tsconfig.esm.json",
