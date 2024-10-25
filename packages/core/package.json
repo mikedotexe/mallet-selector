@@ -15,6 +15,7 @@
   "dependencies": {
     "@meer-js/crypto": "*",
     "@meer-js/providers": "*",
+    "@meer-js/types": "*",
     "borsh": "*",
     "js-sha256": "*",
     "meer-api-js": "*",
