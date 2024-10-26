@@ -1,6 +1,7 @@
 import * as nearAPI from "meer-api-js";
 import type { AddKeyPermission, Action } from "@meer-wallet-selector/core";
-const { transactions, utils } = nearAPI;
+const { transactions } = nearAPI;
+import { publicKeyFrom } from "@meer-js/crypto"
 
 const getAccessKey = (permission: AddKeyPermission) => {
   if (permission === "FullAccess") {
@@ -43,22 +44,25 @@ export const createAction = (action: Action) => {
     }
     case "Stake": {
       const { stake, publicKey } = action.params;
+      const pubKey = publicKeyFrom(publicKey);
 
-      return transactions.stake(BigInt(stake), utils.PublicKey.from(publicKey));
+      return transactions.stake(BigInt(stake), pubKey);
     }
     case "AddKey": {
       const { publicKey, accessKey } = action.params;
+      const pubKey = publicKeyFrom(publicKey);
 
       return transactions.addKey(
-        utils.PublicKey.from(publicKey),
+        pubKey,
         // TODO: Use accessKey.nonce? meer-api-js seems to think 0 is fine?
         getAccessKey(accessKey.permission)
       );
     }
     case "DeleteKey": {
       const { publicKey } = action.params;
+      const pubKey = publicKeyFrom(publicKey);
 
-      return transactions.deleteKey(utils.PublicKey.from(publicKey));
+      return transactions.deleteKey(pubKey);
     }
     case "DeleteAccount": {
       const { beneficiaryId } = action.params;

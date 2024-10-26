@@ -43,11 +43,7 @@ export const signTransactions = async (
 
     const transaction = createTransaction(
       transactions[i].signerId,
-      new PublicKey({
-        keyType: KeyType.ED25519,
-        data: publicKey.data
-      }),
-      // PublicKey.from(publicKey.toString()),
+      publicKey,
       transactions[i].receiverId,
       accessKey.nonce + i + 1,
       actions,

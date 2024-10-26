@@ -17,6 +17,7 @@ import type {
 } from "@meer-wallet-selector/core";
 import { getActiveAccount } from "@meer-wallet-selector/core";
 import { createAction } from "@meer-wallet-selector/wallet-utils";
+import { publicKeyFrom } from "@meer-js/crypto"
 
 import WalletConnectClient from "./wallet-connect-client";
 import icon from "./icon.js";
@@ -253,10 +254,9 @@ const WalletConnect: WalletBehaviourFactory<
       if (!validateAccessKey(transaction, accessKey)) {
         throw new Error("Invalid access key");
       }
-
       const tx = nearAPI.transactions.createTransaction(
         transactions[i].signerId,
-        nearAPI.utils.PublicKey.from(publicKey.toString()),
+        publicKey,
         transactions[i].receiverId,
         accessKey.nonce + i + 1,
         transaction.actions.map((action) => createAction(action)),
@@ -338,7 +338,7 @@ const WalletConnect: WalletBehaviourFactory<
 
     const tx = nearAPI.transactions.createTransaction(
       transaction.signerId,
-      nearAPI.utils.PublicKey.from(account.publicKey),
+      publicKeyFrom(account.publicKey),
       transaction.receiverId,
       accessKey.nonce + 1,
       transaction.actions.map((action) => createAction(action)),
@@ -389,7 +389,7 @@ const WalletConnect: WalletBehaviourFactory<
       txs.push(
         nearAPI.transactions.createTransaction(
           transaction.signerId,
-          nearAPI.utils.PublicKey.from(account.publicKey),
+          publicKeyFrom(account.publicKey),
           transaction.receiverId,
           accessKey.nonce + i + 1,
           transaction.actions.map((action) => createAction(action)),
