@@ -12,7 +12,6 @@ import type {
 
 import { createTransaction } from "@meer-js/transactions";
 import { baseDecode } from "@meer-js/utils";
-import { PublicKey } from "@meer-js/crypto";
 import { connect } from "meer-api-js";
 import { createAction } from "@meer-wallet-selector/wallet-utils";
 import icon from "./icon";
@@ -127,7 +126,7 @@ const MyNearWallet: WalletBehaviourFactory<
 
         return createTransaction(
           account.accountId,
-          PublicKey.from(accessKey.public_key),
+          localKey,
           transaction.receiverId,
           nonce,
           actions,

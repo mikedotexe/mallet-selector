@@ -1,4 +1,6 @@
-yarn workspaces foreach --all -ptv run publish --access public --tolerate-republish --otp
+yarn constraints --fix
+
+yarn workspaces foreach --all -ptv run publish --access public --tolerate-republish --otp 
 
 yarn tsc -b packages/my-near-wallet
 

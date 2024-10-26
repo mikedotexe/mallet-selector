@@ -1,11 +1,11 @@
 {
   "name": "@meer-wallet-selector/ethereum-wallets",
-  "version": "9.9.9",
+  "version": "9.9.15",
   "description": "Ethereum wallets package for NEAR Wallet Selector.",
   "scripts": {
     "compile:esm": "tsc -p tsconfig.esm.json",
     "compile:cjs": "tsc -p tsconfig.cjs.json",
-    "clean": "yarn rimraf dist",
+    "clean": "yarn rimraf dist node_modules package.tgz package",
     "publish": "yarn npm publish --access public --tolerate-republish"
   },
   "types": "./dist/esm/index.d.ts",
@@ -30,8 +30,7 @@
     "typescript": "*"
   },
   "files": [
-    "./dist/esm",
-    "./dist/cjs"
+    "dist"
   ],
   "exports": {
     ".": {

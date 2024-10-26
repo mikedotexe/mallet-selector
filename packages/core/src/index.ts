@@ -72,6 +72,7 @@ export type {
   SignMessageParams,
 } from "./lib/wallet";
 
+// i dunno man, why
 export type { FinalExecutionOutcome } from "@meer-js/types";
 
 export {
@@ -84,5 +85,3 @@ export {
 } from "./lib/helpers";
 
 export { translate, allowOnlyLanguage } from "./lib/translate/translate";
-
-export { mockWallet } from './lib/testUtils'

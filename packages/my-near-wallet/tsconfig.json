@@ -6,8 +6,8 @@
     "declarationMap": true,
     "types": ["node"],
     "paths": {
-      "@meer-wallet-selector/*": ["../*"]
+      "@meer-wallet-selector/*": ["../*/src"]
     }
   },
-  "include": ["src/**/*"]
+  "include": ["src/**/*.ts"]
 }

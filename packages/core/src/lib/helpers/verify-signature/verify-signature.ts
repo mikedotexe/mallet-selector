@@ -7,9 +7,9 @@ import type {
 } from "./verify-signature.types";
 import {Payload, payloadSchema} from "./payload";
 import type { AccessKeyView } from "@meer-js/types";
-import {KeyType, PublicKey, publicKeyFrom} from "@meer-js/types";
-// import {KeyType, PublicKey, publicKeyFrom} from "@meer-js/crypto";
-import {JsonRpcProvider} from "@meer-js/providers";
+import { PublicKey } from "@meer-js/types";
+import { publicKeyFrom } from "@meer-js/crypto";
+import { JsonRpcProvider } from "@meer-js/providers";
 
 export const verifySignature = ({
   publicKey,
