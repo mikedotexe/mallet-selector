@@ -1,6 +1,6 @@
 {
   "name": "@meer-wallet-selector/ethereum-wallets",
-  "version": "9.9.14",
+  "version": "9.9.15",
   "description": "Ethereum wallets package for NEAR Wallet Selector.",
   "scripts": {
     "compile:esm": "tsc -p tsconfig.esm.json",
