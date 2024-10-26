@@ -5,7 +5,7 @@
   "scripts": {
     "compile:esm": "yarn tsc -p tsconfig.esm.json",
     "compile:cjs": "yarn tsc -p tsconfig.cjs.json",
-    "clean": "yarn rimraf dist",
+    "clean": "yarn rimraf dist node_modules package.tgz package",
     "publish": "yarn npm publish --access public --tolerate-republish"
   },
   "types": "./dist/esm/my-near-wallet/src/index.d.ts",
