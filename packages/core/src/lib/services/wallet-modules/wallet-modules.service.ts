@@ -1,4 +1,4 @@
-import type { WalletModulesParams } from "./wallet-modules.service.types";
+import type { WalletModulesParams } from "./wallet-modules.service.types.js";
 import type {
   SignInParams,
   Wallet,
@@ -8,13 +8,13 @@ import type {
   Account,
   InstantLinkWallet,
   SignMessageParams,
-} from "../../wallet";
-import type { StorageService } from "../storage/storage.service.types";
-import type { Options } from "../../options.types";
-import type { ContractState, ModuleState, Store } from "../../store.types";
-import { EventEmitter } from "../event-emitter/event-emitter.service";
-import type { WalletSelectorEvents } from "../../wallet-selector.types";
-import { Logger, logger } from "../logger/logger.service";
+} from "../../wallet/index.js";
+import type { StorageService } from "../storage/storage.service.types.js";
+import type { Options } from "../../options.types.js";
+import type { ContractState, ModuleState, Store } from "../../store.types.js";
+import { EventEmitter } from "../event-emitter/event-emitter.service.js";
+import type { WalletSelectorEvents } from "../../wallet-selector.types.js";
+import { Logger, logger } from "../logger/logger.service.js";
 import {
   RECENTLY_SIGNED_IN_WALLETS,
   PACKAGE_NAME,
@@ -22,10 +22,10 @@ import {
   PENDING_SELECTED_WALLET_ID,
   REMEMBER_RECENT_WALLETS,
   REMEMBER_RECENT_WALLETS_STATE,
-} from "../../constants";
-import { JsonStorage } from "../storage/json-storage.service";
-import type { SignMessageMethod } from "../../wallet";
-import type { ProviderService } from "../provider/provider.service.types";
+} from "../../constants.js";
+import { JsonStorage } from "../storage/json-storage.service.js";
+import type { SignMessageMethod } from "../../wallet/index.js";
+import type { ProviderService } from "../provider/provider.service.types.js";
 
 export class WalletModules {
   private factories: Array<WalletModuleFactory>;

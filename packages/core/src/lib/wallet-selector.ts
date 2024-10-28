@@ -1,14 +1,14 @@
-import { getNetworkPreset, resolveOptions } from "./options";
-import { createStore } from "./store";
+import { getNetworkPreset, resolveOptions } from "./options.js";
+import { createStore } from "./store.js";
 import type {
   WalletSelector,
   WalletSelectorEvents,
   WalletSelectorParams,
-} from "./wallet-selector.types";
-import { EventEmitter, Logger, WalletModules, Provider } from "./services";
-import type { Wallet } from "./wallet";
-import type { Store } from "./store.types";
-import type { NetworkId, Options } from "./options.types";
+} from "./wallet-selector.types.js";
+import { EventEmitter, Logger, WalletModules, Provider } from "./services/index.js";
+import type { Wallet } from "./wallet/index.js";
+import type { Store } from "./store.types.js";
+import type { NetworkId, Options } from "./options.types.js";
 
 let walletSelectorInstance: WalletSelector | null = null;
 

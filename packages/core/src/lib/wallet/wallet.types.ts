@@ -3,11 +3,11 @@ import type {
   LoggerService,
   ProviderService,
   JsonStorageService,
-} from "../services";
-import type { Options } from "../options.types";
-import type { ReadOnlyStore } from "../store.types";
-import type { Transaction, Action } from "./transactions.types";
-import type { Modify, Optional } from "../utils.types";
+} from "../services/index.js";
+import type { Options } from "../options.types.js";
+import type { ReadOnlyStore } from "../store.types.js";
+import type { Transaction, Action } from "./transactions.types.js";
+import type { Modify, Optional } from "../utils.types.js";
 import type { FinalExecutionOutcome } from "@meer-js/types";
 import { KeyType } from "@meer-js/crypto";
 

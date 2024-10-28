@@ -1,7 +1,7 @@
 import type { BehaviorSubject, Observable } from "rxjs";
 
-import type { Wallet, Account } from "./wallet";
-import type { SignMessageMethod } from "./wallet";
+import type { Wallet, Account } from "./wallet/index.js";
+import type { SignMessageMethod } from "./wallet/index.js";
 
 export interface ContractState {
   /**

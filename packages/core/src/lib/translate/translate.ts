@@ -1,15 +1,15 @@
-import en from "../locale/en.json";
-import es from "../locale/es.json";
-import zh from "../locale/zh.json";
-import bg from "../locale/bg.json";
-import ko from "../locale/ko.json";
-import vi from "../locale/vi.json";
-import hi from "../locale/hi.json";
-import ar from "../locale/ar.json";
-import hr from "../locale/hr.json";
-import mk from "../locale/mk.json";
-import sl from "../locale/sl.json";
-import sr from "../locale/sr.json";
+import { en } from "../locale/en.js";
+import { es } from "../locale/es.js";
+import { zh } from "../locale/zh.js";
+import { bg } from "../locale/bg.js";
+import { ko } from "../locale/ko.js";
+import { vi } from "../locale/vi.js";
+import { hi } from "../locale/hi.js";
+import { ar } from "../locale/ar.js";
+import { hr } from "../locale/hr.js";
+import { mk } from "../locale/mk.js";
+import { sl } from "../locale/sl.js";
+import { sr } from "../locale/sr.js";
 
 const getLanguage = (languageCode: string) => {
   switch (languageCode) {

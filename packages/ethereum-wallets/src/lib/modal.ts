@@ -1,8 +1,8 @@
 import type { Transaction } from "@meer-wallet-selector/core";
 import { formatUnits } from "viem";
 import type { Chain } from "viem";
-import { DEFAULT_ACCESS_KEY_ALLOWANCE, RLP_EXECUTE } from "./utils";
-import { modalStyles } from "./styles";
+import { DEFAULT_ACCESS_KEY_ALLOWANCE, RLP_EXECUTE } from "./utils.js";
+import { modalStyles } from "./styles.js";
 
 export function createTxModal({
   onCancel,

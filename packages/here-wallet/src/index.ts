@@ -1,1 +1,1 @@
-export { setupHereWallet } from "./lib";
+export { setupHereWallet } from "./lib/index.js";

@@ -2,12 +2,12 @@ import type {
   Account,
   Wallet,
   WalletModuleFactory,
-} from "./wallet/wallet.types";
-import type { ReadOnlyStore } from "./store.types";
-import type { Network, NetworkId, Options } from "./options.types";
-import type { Subscription, StorageService } from "./services";
-import type { SupportedLanguage } from "./translate/translate";
-import type { SignMessageMethod } from "./wallet/wallet.types";
+} from "./wallet/wallet.types.js";
+import type { ReadOnlyStore } from "./store.types.js";
+import type { Network, NetworkId, Options } from "./options.types.js";
+import type { Subscription, StorageService } from "./services/index.js";
+import type { SupportedLanguage } from "./translate/translate.js";
+import type { SignMessageMethod } from "./wallet/wallet.types.js";
 
 export interface WalletSelectorParams {
   /**

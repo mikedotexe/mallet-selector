@@ -32,15 +32,15 @@ const importWagmiCore = async () => {
   });
 };
 
-import icon from "./icon";
-import { createTxModal, createChainSwitchModal } from "./modal";
+import icon from "./icon.js";
+import { createTxModal, createChainSwitchModal } from "./modal.js";
 import {
   ETHEREUM_ACCOUNT_ABI,
   DEFAULT_ACCESS_KEY_ALLOWANCE,
   RLP_EXECUTE,
   MAX_TGAS,
   EthTxError,
-} from "./utils";
+} from "./utils.js";
 
 export interface EthereumWalletsParams {
   wagmiConfig: Config;
@@ -319,6 +319,7 @@ const EthereumWallets: WalletBehaviourFactory<
     }
     // NOTE: re-add simulateContract and parse errors after eth_call implements errors.
     // const { request } = await wagmiCore!.simulateContract(wagmiConfig, ethTx);
+    // @ts-ignore TODO
     const result = await wagmiCore!.writeContract(wagmiConfig, ethTx);
     return result;
   };
@@ -699,7 +700,6 @@ const EthereumWallets: WalletBehaviourFactory<
                 try {
                   await new Promise((r) => setTimeout(r, 1000));
                   nearTx = await nearProvider.txStatus(
-                    /* // @ts-expect-error */
                     receipt.nearTransactionHash,
                     accountLogIn.accountId
                   );

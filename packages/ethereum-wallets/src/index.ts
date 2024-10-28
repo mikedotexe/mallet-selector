@@ -1,2 +1,2 @@
-export { setupEthereumWallets } from "./lib";
-export type { EthereumWalletsParams } from "./lib";
+export { setupEthereumWallets } from "./lib/index.js";
+export type { EthereumWalletsParams } from "./lib/index.js";

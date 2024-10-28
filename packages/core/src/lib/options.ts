@@ -1,6 +1,6 @@
-import type { WalletSelectorParams } from "./wallet-selector.types";
-import type { Options, Network, NetworkId } from "./options.types";
-import { WebStorageService } from "./services";
+import type { WalletSelectorParams } from "./wallet-selector.types.js";
+import type { Options, Network, NetworkId } from "./options.types.js";
+import { WebStorageService } from "./services/index.js";
 
 export const getNetworkPreset = (
   networkId: NetworkId,

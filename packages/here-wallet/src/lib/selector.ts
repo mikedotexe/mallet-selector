@@ -1,5 +1,5 @@
 import { HereWallet, waitInjectedHereWallet } from "@here-wallet/core";
-import type { SelectorInit } from "./types";
+import type { SelectorInit } from "./types.js";
 
 export const initHereWallet: SelectorInit = async (config) => {
   const { store, logger, emitter, options, walletOptions } = config;

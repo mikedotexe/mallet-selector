@@ -1,5 +1,5 @@
 import { EventEmitter as NEventEmitter } from "events";
-import type { EventEmitterService, Subscription } from "./event-emitter.types";
+import type { EventEmitterService, Subscription } from "./event-emitter.types.js";
 
 export class EventEmitter<Events extends Record<string, unknown>>
   implements EventEmitterService<Events>

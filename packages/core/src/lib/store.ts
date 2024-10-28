@@ -1,12 +1,12 @@
 import { Subject, BehaviorSubject, scan } from "rxjs";
 
-import { logger, JsonStorage } from "./services";
-import type { StorageService } from "./services";
+import { logger, JsonStorage } from "./services/index.js";
+import type { StorageService } from "./services/index.js";
 import type {
   Store,
   WalletSelectorState,
   WalletSelectorAction,
-} from "./store.types";
+} from "./store.types.js";
 import {
   PACKAGE_NAME,
   CONTRACT,
@@ -14,7 +14,7 @@ import {
   RECENTLY_SIGNED_IN_WALLETS,
   REMEMBER_RECENT_WALLETS,
   REMEMBER_RECENT_WALLETS_STATE,
-} from "./constants";
+} from "./constants.js";
 
 const reducer = (
   state: WalletSelectorState,

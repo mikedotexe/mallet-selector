@@ -1,4 +1,4 @@
-import type { SupportedLanguage } from "./translate/translate";
+import type { SupportedLanguage } from "./translate/translate.js";
 
 export type NetworkId = "mainnet" | "testnet";
 

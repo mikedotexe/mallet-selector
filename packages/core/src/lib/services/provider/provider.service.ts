@@ -8,7 +8,7 @@ import type {
   ProviderService,
   QueryParams,
   ViewAccessKeyParams,
-} from "./provider.service.types";
+} from "./provider.service.types.js";
 import { JsonRpcProvider, FailoverRpcProvider } from "@meer-js/providers";
 import type { SignedTransaction } from "@meer-js/transactions";
 

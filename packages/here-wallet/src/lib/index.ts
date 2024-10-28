@@ -4,8 +4,8 @@ import type {
   WalletModuleFactory,
   InjectedWallet,
 } from "@meer-wallet-selector/core";
-import { initHereWallet } from "./selector";
-import icon from "./icon";
+import { initHereWallet } from "./selector.js";
+import icon from "./icon.js";
 
 export { icon };
 

@@ -1,4 +1,4 @@
-import type { LoggerService } from "./logger.service.types";
+import type { LoggerService } from "./logger.service.types.js";
 
 type SupportedMethod = "log" | "info" | "warn" | "error";
 
