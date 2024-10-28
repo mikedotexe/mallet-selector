@@ -1,5 +1,5 @@
 import React from "react";
-import { BackArrowIcon } from "./icons/BackArrowIcon";
+import { BackArrowIcon } from "./icons/BackArrowIcon.js";
 
 interface BackArrowProps {
   onClick: () => void;

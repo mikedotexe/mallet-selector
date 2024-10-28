@@ -1,8 +1,8 @@
 import React from "react";
 import type { ModuleState } from "@meer-wallet-selector/core";
 import { translate } from "@meer-wallet-selector/core";
-import { ConnectionErrorIcon } from "./icons/ConnectionErrorIcon";
-import { ConnectionSuccessIcon } from "./icons/ConnectionSuccessIcon";
+import { ConnectionErrorIcon } from "./icons/ConnectionErrorIcon.js";
+import { ConnectionSuccessIcon } from "./icons/ConnectionSuccessIcon.js";
 
 interface ConnectionResultProps {
   module: ModuleState;

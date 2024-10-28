@@ -4,12 +4,12 @@ import type {
   BrowserWallet,
 } from "@meer-wallet-selector/core";
 import { modalState } from "../modal";
-import { renderWhatIsAWallet } from "./WhatIsAWallet";
+import { renderWhatIsAWallet } from "./WhatIsAWallet.js";
 import { translate } from "@meer-wallet-selector/core";
-import { BackArrowIcon } from "./icons/BackArrowIcon";
-import { CloseIcon } from "./icons/CloseIcon";
-import { QRIcon } from "./icons/QRIcon";
-import { LinkIcon } from "./icons/LinkIcon";
+import { BackArrowIcon } from "./icons/BackArrowIcon.js";
+import { CloseIcon } from "./icons/CloseIcon.js";
+import { QRIcon } from "./icons/QRIcon.js";
+import { LinkIcon } from "./icons/LinkIcon.js";
 
 function getWalletUrl(module: ModuleState) {
   if (!modalState) {

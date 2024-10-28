@@ -1,11 +1,11 @@
 import type { ModuleState, Wallet } from "@meer-wallet-selector/core";
 import { translate } from "@meer-wallet-selector/core";
 
-import { connectToWallet } from "../render-modal";
+import { connectToWallet } from "../render-modal.js";
 import copy from "copy-to-clipboard";
 import * as QRCode from "qrcode";
-import { CloseIcon } from "./icons/CloseIcon";
-import { CopyIcon } from "./icons/CopyIcon";
+import { CloseIcon } from "./icons/CloseIcon.js";
+import { CopyIcon } from "./icons/CopyIcon.js";
 
 export async function renderScanQRCode(
   module: ModuleState<Wallet>,

@@ -1,8 +1,8 @@
 import type { ModuleState, Wallet } from "@meer-wallet-selector/core";
-import { renderConnectHardwareWallet } from "./ConnectHardwareWallet";
+import { renderConnectHardwareWallet } from "./ConnectHardwareWallet.js";
 import { translate } from "@meer-wallet-selector/core";
-import { BackArrowIcon } from "./icons/BackArrowIcon";
-import { CloseIcon } from "./icons/CloseIcon";
+import { BackArrowIcon } from "./icons/BackArrowIcon.js";
+import { CloseIcon } from "./icons/CloseIcon.js";
 
 export async function renderNoLedgerAccountsFound(module: ModuleState<Wallet>) {
   document.querySelector(".modal-right")!.innerHTML = `

@@ -1,8 +1,8 @@
-import { renderGetAWallet } from "./GetAWallet";
+import { renderGetAWallet } from "./GetAWallet.js";
 import { translate } from "@meer-wallet-selector/core";
-import { CloseIcon } from "./icons/CloseIcon";
-import { KeyIcon } from "./icons/KeyIcon";
-import { FolderIcon } from "./icons/FolderIcon";
+import { CloseIcon } from "./icons/CloseIcon.js";
+import { KeyIcon } from "./icons/KeyIcon.js";
+import { FolderIcon } from "./icons/FolderIcon.js";
 
 export async function renderWhatIsAWallet() {
   document.querySelector(".modal-right")!.innerHTML = `

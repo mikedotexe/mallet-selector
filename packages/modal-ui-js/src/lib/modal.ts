@@ -4,15 +4,15 @@ import type {
   Wallet,
   WalletSelector,
 } from "@meer-wallet-selector/core";
-import { renderModal } from "./render-modal";
+import { renderModal } from "./render-modal.js";
 import type {
   WalletSelectorModal,
   ModalOptions,
   ModalRoute,
   ModalEvents,
-} from "./modal.types";
-import { renderWhatIsAWallet } from "./components/WhatIsAWallet";
-import { renderWalletAccount } from "./components/WalletAccount";
+} from "./modal.types.js";
+import { renderWhatIsAWallet } from "./components/WhatIsAWallet.js";
+import { renderWalletAccount } from "./components/WalletAccount.js";
 import { allowOnlyLanguage, EventEmitter } from "@meer-wallet-selector/core";
 
 const MODAL_ELEMENT_ID = "near-wallet-selector-modal";

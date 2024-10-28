@@ -1,11 +1,11 @@
 import type { ModuleState, Wallet } from "@meer-wallet-selector/core";
-import { modalState } from "../modal";
-import type { HardwareWalletAccountState } from "../render-modal";
-import { renderLedgerAccountsOverviewList } from "./LedgerAccountsOverviewList";
-import { renderSpecifyDerivationPath } from "./SpecifyDerivationPath";
+import { modalState } from "../modal.js";
+import type { HardwareWalletAccountState } from "../render-modal.js";
+import { renderLedgerAccountsOverviewList } from "./LedgerAccountsOverviewList.js";
+import { renderSpecifyDerivationPath } from "./SpecifyDerivationPath.js";
 import { translate } from "@meer-wallet-selector/core";
-import { BackArrowIcon } from "./icons/BackArrowIcon";
-import { CloseIcon } from "./icons/CloseIcon";
+import { BackArrowIcon } from "./icons/BackArrowIcon.js";
+import { CloseIcon } from "./icons/CloseIcon.js";
 
 export async function renderLedgerSelectAccount(
   module: ModuleState<Wallet>,

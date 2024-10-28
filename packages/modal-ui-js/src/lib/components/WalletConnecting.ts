@@ -1,6 +1,6 @@
 import type { ModuleState, Wallet } from "@meer-wallet-selector/core";
 import { translate } from "@meer-wallet-selector/core";
-import { CloseIcon } from "./icons/CloseIcon";
+import { CloseIcon } from "./icons/CloseIcon.js";
 
 export async function renderWalletConnecting(
   module: ModuleState<Wallet> | null = null

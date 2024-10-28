@@ -1,8 +1,8 @@
 import type { ModuleState, Wallet } from "@meer-wallet-selector/core";
-import { connectToWallet } from "../render-modal";
+import { connectToWallet } from "../render-modal.js";
 import { translate } from "@meer-wallet-selector/core";
-import { CloseIcon } from "./icons/CloseIcon";
-import { ConnectionErrorIcon } from "./icons/ConnectionErrorIcon";
+import { CloseIcon } from "./icons/CloseIcon.js";
+import { ConnectionErrorIcon } from "./icons/ConnectionErrorIcon.js";
 
 export async function renderWalletConnectionFailed(
   module: ModuleState<Wallet>,

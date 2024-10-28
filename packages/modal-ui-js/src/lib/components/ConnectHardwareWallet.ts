@@ -1,10 +1,10 @@
 import type { ModuleState, Wallet } from "@meer-wallet-selector/core";
 import { DEFAULT_DERIVATION_PATH, modalState } from "../modal";
 import { connectToWallet } from "../render-modal";
-import { renderSpecifyDerivationPath } from "./SpecifyDerivationPath";
+import { renderSpecifyDerivationPath } from "./SpecifyDerivationPath.js";
 import { translate } from "@meer-wallet-selector/core";
-import { CloseIcon } from "./icons/CloseIcon";
-import { LedgerDeviceIcon } from "./icons/LedgerDeviceIcon";
+import { CloseIcon } from "./icons/CloseIcon.js";
+import { LedgerDeviceIcon } from "./icons/LedgerDeviceIcon.js";
 
 export function renderConnectHardwareWallet(module: ModuleState<Wallet>) {
   if (!modalState) {

@@ -4,18 +4,18 @@ import type {
   ModuleState,
   Wallet,
 } from "@meer-wallet-selector/core";
-import { renderConnectHardwareWallet } from "./components/ConnectHardwareWallet";
-import { renderLedgerAccountsOverviewList } from "./components/LedgerAccountsOverviewList";
-import { renderLedgerSelectAccount } from "./components/LedgerSelectAccount";
-import { renderNoLedgerAccountsFound } from "./components/NoLedgerAccountsFound";
-import { renderWalletConnecting } from "./components/WalletConnecting";
-import { renderWalletConnectionFailed } from "./components/WalletConnectionFailed";
-import { renderWalletNotInstalled } from "./components/WalletNotInstalled";
-import { modalState } from "./modal";
-import { renderWalletAccount } from "./components/WalletAccount";
-import { renderScanQRCode } from "./components/ScanQRCode";
+import { renderConnectHardwareWallet } from "./components/ConnectHardwareWallet.js";
+import { renderLedgerAccountsOverviewList } from "./components/LedgerAccountsOverviewList.js";
+import { renderLedgerSelectAccount } from "./components/LedgerSelectAccount.js";
+import { renderNoLedgerAccountsFound } from "./components/NoLedgerAccountsFound.js";
+import { renderWalletConnecting } from "./components/WalletConnecting.js";
+import { renderWalletConnectionFailed } from "./components/WalletConnectionFailed.js";
+import { renderWalletNotInstalled } from "./components/WalletNotInstalled.js";
+import { modalState } from "./modal.js";
+import { renderWalletAccount } from "./components/WalletAccount.js";
+import { renderScanQRCode } from "./components/ScanQRCode.js";
 import { translate } from "@meer-wallet-selector/core";
-import { WarningIcon } from "./components/icons/WarningIcon";
+import { WarningIcon } from "./components/icons/WarningIcon.js";
 
 export type HardwareWalletAccountState = HardwareWalletAccount & {
   selected: boolean;

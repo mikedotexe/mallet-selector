@@ -6,13 +6,13 @@ import type {
   ModuleState,
   WalletSelector,
 } from "@meer-wallet-selector/core";
-import { ModalHeader } from "./ModalHeader";
-import { BackArrow } from "./BackArrow";
+import { ModalHeader } from "./ModalHeader.js";
+import { BackArrow } from "./BackArrow.js";
 import { translate } from "@meer-wallet-selector/core";
-import { QRIcon } from "./icons/QRIcon";
-import { LinkIcon } from "./icons/LinkIcon";
-import { KeyIcon } from "./icons/KeyIcon";
-import { FolderIcon } from "./icons/FolderIcon";
+import { QRIcon } from "./icons/QRIcon.js";
+import { LinkIcon } from "./icons/LinkIcon.js";
+import { KeyIcon } from "./icons/KeyIcon.js";
+import { FolderIcon } from "./icons/FolderIcon.js";
 
 interface WalletHomeProps {
   selector: WalletSelector;

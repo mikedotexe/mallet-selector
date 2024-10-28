@@ -1,8 +1,8 @@
 import React from "react";
 import QRCode from "qrcode";
 import copy from "copy-to-clipboard";
-import { ModalHeader } from "./ModalHeader";
-import { CopyIcon } from "./icons/CopyIcon";
+import { ModalHeader } from "./ModalHeader.js";
+import { CopyIcon } from "./icons/CopyIcon.js";
 import { translate } from "@meer-wallet-selector/core";
 import type { ModuleState, Wallet } from "@meer-wallet-selector/core";
 

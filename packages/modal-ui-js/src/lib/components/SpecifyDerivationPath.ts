@@ -1,17 +1,17 @@
 import type { ModuleState, Wallet } from "@meer-wallet-selector/core";
 import { modalState } from "../modal";
 import { resolveAccounts } from "../render-modal";
-import { renderConnectHardwareWallet } from "./ConnectHardwareWallet";
-import { renderLedgerAccountsOverviewList } from "./LedgerAccountsOverviewList";
-import { renderLedgerSelectAccount } from "./LedgerSelectAccount";
-import { renderNoLedgerAccountsFound } from "./NoLedgerAccountsFound";
-import { renderWalletConnecting } from "./WalletConnecting";
-import { renderWalletConnectionFailed } from "./WalletConnectionFailed";
+import { renderConnectHardwareWallet } from "./ConnectHardwareWallet.js";
+import { renderLedgerAccountsOverviewList } from "./LedgerAccountsOverviewList.js";
+import { renderLedgerSelectAccount } from "./LedgerSelectAccount.js";
+import { renderNoLedgerAccountsFound } from "./NoLedgerAccountsFound.js";
+import { renderWalletConnecting } from "./WalletConnecting.js";
+import { renderWalletConnectionFailed } from "./WalletConnectionFailed.js";
 import { translate } from "@meer-wallet-selector/core";
-import { CloseIcon } from "./icons/CloseIcon";
-import { BackArrowIcon } from "./icons/BackArrowIcon";
-import { UpArrowIcon } from "./icons/UpArrowIcon";
-import { DownArrowIcon } from "./icons/DownArrowIcon";
+import { CloseIcon } from "./icons/CloseIcon.js";
+import { BackArrowIcon } from "./icons/BackArrowIcon.js";
+import { UpArrowIcon } from "./icons/UpArrowIcon.js";
+import { DownArrowIcon } from "./icons/DownArrowIcon.js";
 
 export function renderSpecifyDerivationPath(module: ModuleState<Wallet>) {
   if (!modalState) {

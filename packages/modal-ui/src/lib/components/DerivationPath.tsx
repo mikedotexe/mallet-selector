@@ -6,15 +6,15 @@ import type {
   WalletSelector,
 } from "@meer-wallet-selector/core";
 import type { ModalOptions } from "../modal.types";
-import type { DerivationPathModalRouteParams } from "./Modal.types";
-import HardwareWalletAccountsForm from "./HardwareWalletAccountsForm";
-import { WalletConnecting } from "./WalletConnecting";
-import { ModalHeader } from "./ModalHeader";
-import { BackArrow } from "./BackArrow";
-import { LedgerDeviceIcon } from "./icons/LedgerDeviceIcon";
+import type { DerivationPathModalRouteParams } from "./Modal.types.js";
+import HardwareWalletAccountsForm from "./HardwareWalletAccountsForm.js";
+import { WalletConnecting } from "./WalletConnecting.js";
+import { ModalHeader } from "./ModalHeader.js";
+import { BackArrow } from "./BackArrow.js";
+import { LedgerDeviceIcon } from "./icons/LedgerDeviceIcon.js";
 import { translate } from "@meer-wallet-selector/core";
-import { UpArrowIcon } from "./icons/UpArrowIcon";
-import { DownArrowIcon } from "./icons/DownArrowIcon";
+import { UpArrowIcon } from "./icons/UpArrowIcon.js";
+import { DownArrowIcon } from "./icons/DownArrowIcon.js";
 
 interface DerivationPathProps {
   selector: WalletSelector;

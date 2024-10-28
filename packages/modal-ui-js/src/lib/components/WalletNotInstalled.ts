@@ -1,9 +1,9 @@
 import type { ModuleState, Wallet } from "@meer-wallet-selector/core";
-import { modalState } from "../modal";
+import { modalState } from "../modal.js";
 import { translate } from "@meer-wallet-selector/core";
-import { renderWhatIsAWallet } from "./WhatIsAWallet";
-import { BackArrowIcon } from "./icons/BackArrowIcon";
-import { CloseIcon } from "./icons/CloseIcon";
+import { renderWhatIsAWallet } from "./WhatIsAWallet.js";
+import { BackArrowIcon } from "./icons/BackArrowIcon.js";
+import { CloseIcon } from "./icons/CloseIcon.js";
 
 export function renderWalletNotInstalled(
   module: ModuleState<Wallet> & {

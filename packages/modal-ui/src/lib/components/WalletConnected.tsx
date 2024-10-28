@@ -1,8 +1,8 @@
 import React, { Fragment } from "react";
 import type { ModuleState } from "@meer-wallet-selector/core";
-import { CloseButton } from "./CloseButton";
+import { CloseButton } from "./CloseButton.js";
 import { translate } from "@meer-wallet-selector/core";
-import { ConnectionSuccessIcon } from "./icons/ConnectionSuccessIcon";
+import { ConnectionSuccessIcon } from "./icons/ConnectionSuccessIcon.js";
 
 interface WalletConnectedProps {
   module: ModuleState;

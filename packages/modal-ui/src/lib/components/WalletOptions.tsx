@@ -1,20 +1,20 @@
-import React, { useEffect, useState } from "react";
+import React, {ReactNode, useEffect, useState} from "react";
 import type {
   WalletSelector,
   ModuleState,
   Wallet,
 } from "@meer-wallet-selector/core";
-import { WarningIcon } from "./icons/WarningIcon";
+import { WarningIcon } from "./icons/WarningIcon.js";
 
 interface WalletOptionsProps {
   selector: WalletSelector;
   handleWalletClick: (module: ModuleState) => void;
 }
 
-export const WalletOptions: React.FC<WalletOptionsProps> = ({
+export const WalletOptions = ({
   selector,
   handleWalletClick,
-}) => {
+}: WalletOptionsProps): ReactNode => {
   const [modules, setModules] = useState<Array<ModuleState>>([]);
   const [recentModules, setRecentModules] = useState<Array<ModuleState>>([]);
   const [moreModules, setMoreModules] = useState<Array<ModuleState>>([]);
@@ -91,6 +91,7 @@ export const WalletOptions: React.FC<WalletOptionsProps> = ({
         const { name, description, iconUrl, deprecated } = module.metadata;
         const selected = module.id === selectedWalletId;
 
+        // @ts-ignore
         result.push(
           <li
             tabIndex={0}

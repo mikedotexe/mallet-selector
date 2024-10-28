@@ -2,7 +2,7 @@ import React from "react";
 import type {
   HardwareRoutes,
   HardwareWalletAccountState,
-} from "./DerivationPath";
+} from "./DerivationPath.js";
 
 interface FormProps {
   accounts: Array<HardwareWalletAccountState>;

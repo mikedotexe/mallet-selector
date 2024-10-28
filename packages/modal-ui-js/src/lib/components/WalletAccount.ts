@@ -1,7 +1,7 @@
 import type { ModuleState, Wallet } from "@meer-wallet-selector/core";
 import { translate } from "@meer-wallet-selector/core";
-import { CloseIcon } from "./icons/CloseIcon";
-import { ConnectionSuccessIcon } from "./icons/ConnectionSuccessIcon";
+import { CloseIcon } from "./icons/CloseIcon.js";
+import { ConnectionSuccessIcon } from "./icons/ConnectionSuccessIcon.js";
 
 export async function renderWalletAccount(
   module: ModuleState<Wallet> | null = null
