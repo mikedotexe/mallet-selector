@@ -1,4 +1,6 @@
-{
+import {WalletTranslation} from "./locale.types";
+
+export const sr: WalletTranslation = {
   "modal": {
     "wallet": {
       "connectYourWallet": "Повежите свој новчаник!",

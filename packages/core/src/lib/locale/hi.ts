@@ -1,4 +1,6 @@
-{
+import {WalletTranslation} from "./locale.types";
+
+export const hi: WalletTranslation = {
    "modal": {
      "wallet": {
        "connectYourWallet": "अपना वॉलेट (Wallet) कनेक्ट करें।",

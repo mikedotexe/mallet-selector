@@ -3,27 +3,27 @@ export type {
   WalletSelectorParams,
   WalletSelectorEvents,
   WalletSelectorStore,
-} from "./lib/wallet-selector.types";
+} from "./lib/wallet-selector.types.js";
 export { setupWalletSelector } from "./lib/wallet-selector.js";
 
-export type { Network, NetworkId } from "./lib/options.types";
+export type { Network, NetworkId } from "./lib/options.types.js";
 export type {
   Subscription,
   StorageService,
   JsonStorageService,
   EventEmitterService,
-} from "./lib/services";
+} from "./lib/services/index.js";
 
-export { EventEmitter } from "./lib/services";
+export { EventEmitter } from "./lib/services/index.js";
 
-export type { Optional } from "./lib/utils.types";
+export type { Optional } from "./lib/utils.types.js";
 
 export type {
   WalletSelectorState,
   ContractState,
   ModuleState,
   AccountState,
-} from "./lib/store.types";
+} from "./lib/store.types.js";
 
 export type {
   WalletModuleFactory,
@@ -70,9 +70,8 @@ export type {
   AccountImportData,
   SignedMessage,
   SignMessageParams,
-} from "./lib/wallet";
+} from "./lib/wallet/index.js";
 
-// i dunno man, why
 export type { FinalExecutionOutcome } from "@meer-js/types";
 
 export {
@@ -82,6 +81,6 @@ export {
   verifyFullKeyBelongsToUser,
   verifySignature,
   serializeNep413,
-} from "./lib/helpers";
+} from "./lib/helpers/index.js";
 
-export { translate, allowOnlyLanguage } from "./lib/translate/translate";
+export { translate, allowOnlyLanguage } from "./lib/translate/translate.js";

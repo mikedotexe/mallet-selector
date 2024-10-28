@@ -1,4 +1,6 @@
-{
+import {WalletTranslation} from "./locale.types";
+
+export const ko: WalletTranslation = {
   "modal": {
     "wallet": {
       "connectYourWallet": "지갑 연결하기",

@@ -1,4 +1,6 @@
-{
+import {WalletTranslation} from "./locale.types";
+
+export const mk: WalletTranslation = {
   "modal": {
     "wallet": {
       "connectYourWallet": "Поврзете го вашиот новчаник!",

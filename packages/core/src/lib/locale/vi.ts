@@ -1,4 +1,6 @@
-{
+import {WalletTranslation} from "./locale.types";
+
+export const vi: WalletTranslation = {
     "modal": {
       "wallet": {
         "connectYourWallet": "Kết nối ví của bạn",

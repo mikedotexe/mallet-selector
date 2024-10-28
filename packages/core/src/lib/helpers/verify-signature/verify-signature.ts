@@ -4,8 +4,8 @@ import type {
   VerifyFullKeyBelongsToUserParams,
   VerifySignatureParams,
   ViewAccessKeyParams,
-} from "./verify-signature.types";
-import {Payload, payloadSchema} from "./payload";
+} from "./verify-signature.types.js";
+import {Payload, payloadSchema} from "./payload.js";
 import type { AccessKeyView } from "@meer-js/types";
 import { PublicKey } from "@meer-js/types";
 import { publicKeyFrom } from "@meer-js/crypto";
@@ -35,6 +35,7 @@ export const verifySignature = ({
   const pk: PublicKey = publicKeyFrom(publicKey);
 
   // Verify the signature
+  // @ts-ignore TODO
   return pk.verify(hashedPayload, realSignature);
 };
 

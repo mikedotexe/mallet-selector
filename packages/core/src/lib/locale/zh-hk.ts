@@ -1,4 +1,6 @@
-{
+import {WalletTranslation} from "./locale.types";
+
+export const zhHk: WalletTranslation = {
   "modal": {
     "wallet": {
       "connectYourWallet": "連接你的錢包",

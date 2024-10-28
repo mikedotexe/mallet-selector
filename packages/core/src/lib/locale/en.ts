@@ -1,4 +1,6 @@
-{
+import {WalletTranslation} from "./locale.types";
+
+export const en: WalletTranslation = {
   "modal": {
     "wallet": {
       "connectYourWallet": "Connect Your Wallet",

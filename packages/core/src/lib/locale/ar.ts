@@ -1,4 +1,6 @@
-{
+import {WalletTranslation} from "./locale.types.js";
+
+export const ar: WalletTranslation = {
   "modal": {
     "wallet": {
       "connectYourWallet": "صل محفظتك",

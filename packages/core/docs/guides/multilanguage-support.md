@@ -72,8 +72,8 @@
 - When new language is introduced it must be added to [translate.ts](https://github.com/mikedotexe/mallet-selector/tree/main/packages/core/src/lib/translate/translate.ts) file.
 
   ```ts
-  import en from "../locale/en.json";
-  import es from "../locale/es.json";
+  import en from "../locale/en.js";
+  import es from "../locale/es.ts";
   
   const getLanguage = (languageCode: string) => {
     switch (languageCode) {
