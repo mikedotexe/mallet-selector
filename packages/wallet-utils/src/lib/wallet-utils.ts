@@ -1,4 +1,4 @@
-import { createAction } from "./create-action";
-import { signTransactions } from "./sign-transactions";
+import { createAction } from "./create-action.js";
+import { signTransactions } from "./sign-transactions.js";
 
 export { createAction, signTransactions };

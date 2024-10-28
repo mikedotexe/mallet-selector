@@ -19,7 +19,7 @@ import { getActiveAccount } from "@meer-wallet-selector/core";
 import { createAction } from "@meer-wallet-selector/wallet-utils";
 import { publicKeyFrom } from "@meer-js/crypto"
 
-import WalletConnectClient from "./wallet-connect-client";
+import WalletConnectClient from "./wallet-connect-client.js";
 import icon from "./icon.js";
 
 export interface WalletConnectParams {

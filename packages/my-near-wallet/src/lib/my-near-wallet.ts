@@ -14,7 +14,7 @@ import { createTransaction } from "@meer-js/transactions";
 import { baseDecode } from "@meer-js/utils";
 import { connect } from "meer-api-js";
 import { createAction } from "@meer-wallet-selector/wallet-utils";
-import icon from "./icon";
+import icon from "./icon.js";
 
 export interface MyNearWalletParams {
   walletUrl?: string;

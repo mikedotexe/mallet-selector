@@ -5,7 +5,7 @@ import {baseDecode} from "@meer-js/utils";
 import {JsonRpcProvider} from "@meer-js/providers";
 import type {Network, Transaction} from "@meer-wallet-selector/core/src";
 import type {AccessKeyViewRaw} from "@meer-js/types";
-import {createAction} from "./create-action";
+import {createAction} from "./create-action.js";
 
 export const signTransactions = async (
   transactions: Array<Transaction>,
