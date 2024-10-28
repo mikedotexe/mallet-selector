@@ -13,6 +13,7 @@
   "module": "./dist/esm/my-near-wallet/src/index.js",
   "type": "module",
   "dependencies": {
+    "meer-api-js": "*",
     "@meer-js/crypto": "*",
     "@meer-js/keystores-browser": "*",
     "@meer-js/signers": "*",
