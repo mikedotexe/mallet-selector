@@ -1,6 +1,6 @@
 {
   "name": "@meer-wallet-selector/wallet-picker-ui",
-  "version": "9.9.17",
+  "version": "9.9.18",
   "description": "Wallet picker using a React Portal.",
   "scripts": {
     "compile:esm": "tsc -p tsconfig.esm.json",
