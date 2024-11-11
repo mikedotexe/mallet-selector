@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import ReactDOM from 'react-dom';
-import './WalletPickerModal.css';
 
 export interface WalletData {
     name: string;
@@ -60,15 +59,87 @@ export const WalletPickerModal: React.FC<WalletPickerModalProps> = ({ isOpen, on
     // "Don't block the UI" ~ The Dream, Redacted 2024
     if (!isOpen) return null;
 
-    const modalContent: React.ReactElement = (
-        <div className="wallet-picker-overlay" onClick={onClose}>
-            <div className="wallet-picker-modal" onClick={(e) => e.stopPropagation()}>
-                <h2>Select a Wallet</h2>
-                <div className="wallet-list">
+    const styles = {
+        overlay: {
+            position: 'fixed' as const,
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            backgroundColor: 'rgba(20, 20, 20, 0.9)', // Dark overlay
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            zIndex: 1000,
+        },
+        modal: {
+            backgroundColor: '#1a1a1a', // Dark background
+            border: '2px solid #5a189a', // Purple border
+            borderRadius: '16px',
+            maxWidth: '500px',
+            width: '90%',
+            padding: '24px',
+            boxSizing: 'border-box' as const,
+            maxHeight: '80vh',
+            overflowY: 'auto' as const,
+        },
+        title: {
+            marginTop: 0,
+            marginBottom: '16px',
+            textAlign: 'center' as const,
+            color: '#e0aaff', // Light purple
+        },
+        walletList: {
+            display: 'flex',
+            flexDirection: 'column' as const,
+            gap: '12px',
+        },
+        walletItem: {
+            display: 'flex',
+            alignItems: 'center',
+            padding: '12px',
+            backgroundColor: '#2c2c2c',
+            borderRadius: '8px',
+            cursor: 'pointer',
+            transition: 'background-color 0.2s',
+        },
+        walletItemHover: {
+            backgroundColor: '#3a0ca3', // Dark purple
+        },
+        walletIcon: {
+            width: '48px',
+            height: '48px',
+            objectFit: 'contain' as const,
+            borderRadius: '8px',
+            marginRight: '16px',
+        },
+        walletName: {
+            color: '#ffffff',
+            fontSize: '18px',
+        },
+    };
+
+    // Event handler for hover effect
+    const [hoveredWallet, setHoveredWallet] = useState<string | null>(null);
+
+    const modalContent: React.ReactNode = (
+        <div style={styles.overlay} onClick={onClose} className={'near-wallet-picker nwp-specific-0 nwp-specific-1'}>
+            <div style={styles.modal} onClick={(e) => e.stopPropagation()} className={'near-wallet-picker-div-1'}>
+                <h2 style={styles.title}  className={'near-wallet-picker-header'}>Select a Wallet</h2>
+                <div style={styles.walletList}  className={'near-wallet-picker-div-2'}>
                     {wallets.map((wallet) => (
-                        <div key={wallet.name} className="wallet-item">
-                            <img src={wallet.icon} alt={`${wallet.name} icon`} />
-                            <span>{wallet.name}</span>
+                        <div
+                            key={wallet.name}
+                            style={{
+                                ...styles.walletItem,
+                                ...(hoveredWallet === wallet.name ? styles.walletItemHover : {}),
+                            }}
+                            onMouseEnter={() => setHoveredWallet(wallet.name)}
+                            onMouseLeave={() => setHoveredWallet(null)}
+                            className={`near-wallet-picker-wallet nwp-wallet-${wallet.name}`}
+                        >
+                            <img src={wallet.icon} alt={`${wallet.name} icon`} style={styles.walletIcon} className={'near-wallet-picker-img-1'}/>
+                            <span style={styles.walletName} className={'near-wallet-picker-wallet-name'}>{wallet.name}</span>
                         </div>
                     ))}
                 </div>
