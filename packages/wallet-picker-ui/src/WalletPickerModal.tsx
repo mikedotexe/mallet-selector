@@ -14,7 +14,9 @@ export interface WalletPickerModalProps {
 }
 
 export const WalletPickerModal: React.FC<WalletPickerModalProps> = ({ isOpen, onClose, walletNames }) => {
+    // call hooks at top
     const [wallets, setWallets] = useState<WalletData[]>([]);
+    const [hoveredWallet, setHoveredWallet] = useState<string | null>(null);
 
     // escape key closes the modal, as the scriptures say
     useEffect(() => {
@@ -42,22 +44,34 @@ export const WalletPickerModal: React.FC<WalletPickerModalProps> = ({ isOpen, on
                     // which are the npm package names.
                     // 'booty' for package at https://www.npmjs.com/package/booty
                     const walletModule = await import(/* webpackIgnore: true */ walletName);
-                    const walletInfo = walletModule.ack();
-                    loadedWallets.push(walletInfo);
+                    const setupWalletFunction = walletModule.setupMyNearWallet;
+                    const walletData: WalletData = {
+                        name: walletName,
+                        // icon: walletModule.icon,
+                        icon: 'hardcode bro',
+                        setupFn: setupWalletFunction,
+                    };
+                    loadedWallets.push(walletData);
                 } catch (error) {
-                    console.error(`Dear developer, we need to talk.\nYou must check that you're supplying at least one package name as a string, and that it's installed. Error with wallet package: ${walletName}`, error);
+                    console.error(
+                        `Dear developer, we need to talk.\nYou must check that you're supplying at least one package name as a string, and that it's installed. Error with wallet package: ${walletName}`,
+                        error
+                    );
                 }
             }
 
             setWallets(loadedWallets);
         };
 
-        // dude just let the thing return 0 don't leave it hanging, it's impolite
-        loadWallets().then(() => 0);
+        // dude just let the thing return somethin' don't leave it hanging, it's impolite
+        loadWallets().then(() => {});
     }, [walletNames]);
 
     // "Don't block the UI" ~ The Dream, Redacted 2024
-    if (!isOpen) return null;
+    if (!isOpen) {
+        console.log("don't block the ui");
+        return null;
+    }
 
     const styles = {
         overlay: {
@@ -119,9 +133,6 @@ export const WalletPickerModal: React.FC<WalletPickerModalProps> = ({ isOpen, on
         },
     };
 
-    // Event handler for hover effect
-    const [hoveredWallet, setHoveredWallet] = useState<string | null>(null);
-
     const modalContent: React.ReactNode = (
         <div style={styles.overlay} onClick={onClose} className={'near-wallet-picker nwp-specific-0 nwp-specific-1'}>
             <div style={styles.modal} onClick={(e) => e.stopPropagation()} className={'near-wallet-picker-div-1'}>
@@ -147,8 +158,5 @@ export const WalletPickerModal: React.FC<WalletPickerModalProps> = ({ isOpen, on
         </div>
     );
 
-    // React Portal time, folks
-    // check it, the official example is making a modal
-    // https://react.dev/reference/react-dom/createPortal#rendering-a-modal-dialog-with-a-portal
     return ReactDOM.createPortal(modalContent, document.body);
-}
+};
