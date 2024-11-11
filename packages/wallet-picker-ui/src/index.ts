@@ -1,0 +1,1 @@
+export { WalletPickerModal } from './WalletPickerModal';

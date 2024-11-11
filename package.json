@@ -20,8 +20,7 @@
     "packages/ethereum-wallets",
     "packages/here-wallet",
     "packages/bitte-wallet",
-    "packages/modal-ui",
-    "packages/modal-ui-js",
+    "packages/wallet-picker-ui",
     "packages/my-near-wallet",
     "packages/wallet-connect",
     "packages/wallet-utils"
@@ -82,7 +81,7 @@
     "js-sha256": "^0.11.0",
     "meer-api-js": "^6.6.16",
     "near-seed-phrase": "0.2.0",
-    "next": "13.3.0",
+    "next": "14.2.10",
     "ngx-deploy-npm": "7.1.0",
     "qrcode": "1.5.4",
     "react": "18.2.0",
@@ -162,7 +161,7 @@
     "react-refresh": "0.10.0",
     "react-test-renderer": "18.2.0",
     "sass": "1.55.0",
-    "semantic-release": "19.0.2",
+    "semantic-release": "19.0.3",
     "style-loader": "3.3.0",
     "stylus": "0.55.0",
     "stylus-loader": "7.1.0",
@@ -172,7 +171,7 @@
     "typescript": "^5.6.2",
     "url-loader": "4.1.1",
     "util": "0.12.5",
-    "webpack": "5.75.0",
+    "webpack": "5.94.0",
     "webpack-merge": "5.8.0"
   },
   "keywords": [
