@@ -8,11 +8,12 @@
     "clean": "yarn rimraf dist node_modules package.tgz package",
     "publish": "yarn npm publish --access public --tolerate-republish"
   },
-  "types": "./dist/esm/index.d.ts",
-  "main": "./dist/cjs/index.js",
-  "module": "./dist/esm/index.js",
+  "types": "./dist/esm/wallet-picker-ui/src/index.d.ts",
+  "main": "./dist/cjs/wallet-picker-ui/src/index.js",
+  "module": "./dist/esm/wallet-picker-ui/src/index.js",
   "type": "module",
   "dependencies": {
+    "@meer-wallet-selector/core": "workspace:*",
     "react": "*",
     "react-dom": "*"
   },
@@ -28,8 +29,8 @@
   ],
   "exports": {
     ".": {
-      "require": "./dist/cjs/index.js",
-      "import": "./dist/esm/index.js"
+      "require": "./dist/cjs/wallet-picker-ui/src/index.js",
+      "import": "./dist/esm/wallet-picker-ui/src/index.js"
     }
   },
   "keywords": [
